@@ -1,43 +1,55 @@
-<nav class="navbar-wagon">
-  <div class="container navbar-wagon-container">
 
-    <% link_to "/" do %>
-      <%= image_tag "lewagon.png", class: "navbar-wagon-logo" %>
-    <% end %>
-
-    <form action="" class="navbar-wagon-search">
-      <input type="text" class="navbar-wagon-search-input hidden-xs" placeholder="Search for featured stuff">
-      <button type="submit" class="navbar-wagon-search-btn hidden-xs">
-        <i class="fa fa-search"></i>
+    <%= partial "navbar" %>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
-    </form>
-
-    <div class="navbar-wagon-item">
-      <a href="" class="navbar-wagon-button btn btn-default">Post stuff</a>
+      <a class="navbar-brand" href="#">My Museum</a>
     </div>
 
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Contact</a>
-
-    <a href="" class="navbar-wagon-item navbar-wagon-link">
-      <div class="icon-badge-container">
-        <i class="fa fa-envelope-o"></i>
-        <div class="icon-badge icon-badge-blue">3</div>
-      </div>
-    </a>
-
-    <div class="navbar-wagon-item">
-      <div class="dropdown">
-
-        <img src="https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg" alt="" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-
-        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu" aria-labelledby="navbar-wagon-menu">
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Log Out</a></li>
-        </ul>
-
-      </div>
-    </div>
-
-  </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
